@@ -1,10 +1,15 @@
-﻿namespace Netflix_Projekt_2sem
+﻿
+namespace Netflix_Projekt_2sem
 {
     public class Season
     {
-        int SeasonId { get; set; }
+        public int SeasonId { get; set; }
 
-        List<Episode> Episodes { get; set; }
+        public List<Episode> Episodes { get; set; } = new List<Episode>();
+
+        public Season()
+        {
+        }
 
         public Season(int seasonId, List<Episode> episodes)
         {
